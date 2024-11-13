@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="products">
+
+        <div class="product">
+            <img src="img/product1.png" alt="milk">
+            <p id="name1">Молоко</p>
+            <p>Price: <span id="price1">47.79</span> грн</p>
+            <label for="quantity1">Количество:</label>
+            <div class="quantity-controls">
+                <button  onclick="decreaseQuantity('quantity1')">-</button>
+                <input type="number" id="quantity1" name="quantity" value="1">
+                <button  onclick="increaseQuantity('quantity1')">+</button>
+            </div>
+            <button onclick="addToCart(1)">Buy</button>
+        </div>
+
+        <div class="product">
+            <img src="img/product2.png" alt="water">
+            <p id="name2">Вода мінеральна «Карпатська Джерельна» негазована</p>
+            <p>Price: <span id="price2">22.99</span> грн</p>
+            <label for="quantity2">Количество:</label>
+            <div class="quantity-controls">
+                <button  onclick="decreaseQuantity('quantity2')">-</button>
+                <input type="number" id="quantity2" name="quantity" value="1">
+                <button  onclick="increaseQuantity('quantity2')">+</button>
+            </div>
+            <button onclick="addToCart(2)">Buy</button>
+        </div>
+
+        <div class="product">
+            <img src="img/product3.png" alt="sugar">
+            <p id="name3">Цукор «Повна Чаша» білий кристалічний</p>
+            <p>Price: <span id="price3">32.89</span> грн</p>
+            <label for="quantity3">Количество:</label>
+            <div class="quantity-controls">
+                <button  onclick="decreaseQuantity('quantity3')">-</button>
+                <input type="number" id="quantity3" name="quantity" value="1">
+                <button  onclick="increaseQuantity('quantity3')">+</button>
+            </div>
+            <button onclick="addToCart(3)">Buy</button>
+        </div>
+        
+        <div class="product">
+            <img src="img/product4.png" alt="sugar">
+            <p id="name4">Серветки паперові «Премія»® мікс 3-шарові в коробці</p>
+            <p>Price: <span id="price4">49.99</span> грн</p>
+            <label for="quantity4">Количество:</label>
+            <div class="quantity-controls">
+                <button  onclick="decreaseQuantity('quantity4')">-</button>
+                <input type="number" id="quantity4" name="quantity" value="1">
+                <button  onclick="increaseQuantity('quantity4')">+</button>
+            </div>
+            <button onclick="addToCart(4)">Buy</button>
+        </div>
+
+        <div class="product">
+            <img src="img/product5.png" alt="sugar">
+            <p id="name5">Серветки паперові «Повна Чаша» «Мікс» 2-шарові в картонній коробці, 150шт</p>
+            <p>Price: <span id="price5">59.99</span> грн</p>
+            <label for="quantity5">Количество:</label>
+            <div class="quantity-controls">
+                <button  onclick="decreaseQuantity('quantity5')">-</button>
+                <input type="number" id="quantity5" name="quantity" value="1">
+                <button  onclick="increaseQuantity('quantity5')">+</button>
+            </div>
+            <button onclick="addToCart(5)">Buy</button>
+        </div>
+
+        <div class="product">
+            <img src="img/product6.png" alt="sugar">
+            <p id="name6">Напій Coca-Cola</p>
+            <p>Price: <span id="price6">27.99</span> грн</p>
+            <label for="quantity6">Количество:</label>
+            <div class="quantity-controls">
+                <button  onclick="decreaseQuantity('quantity6')">-</button>
+                <input type="number" id="quantity6" name="quantity" value="1">
+                <button  onclick="increaseQuantity('quantity6')">+</button>
+            </div>
+            <button onclick="addToCart(6)">Buy</button>
+        </div>
+
+        <div class="product">
+            <img src="img/product7.png" alt="sugar">
+            <p id="name7">Сироп Luxardo Lime, 0,75л</p>
+            <p>Price: <span id="price7">239</span> грн</p>
+            <label for="quantity7">Количество:</label>
+            <div class="quantity-controls">
+                <button  onclick="decreaseQuantity('quantity7')">-</button>
+                <input type="number" id="quantity7" name="quantity" value="1">
+                <button  onclick="increaseQuantity('quantity7')">+</button>
+            </div>
+            <button onclick="addToCart(7)">Buy</button>
+        </div>
+
+        <div class="product">
+            <img src="img/product8.png" alt="sugar">
+            <p id="name8">Ковбаса «Глобино» «Лікарська» в/ґ</p>
+            <p>Price: <span id="price8">33.90</span> грн</p>
+            <label for="quantity8">Количество:</label>
+            <div class="quantity-controls">
+                <button  onclick="decreaseQuantity('quantity8')">-</button>
+                <input type="number" id="quantity8" name="quantity" value="1">
+                <button  onclick="increaseQuantity('quantity8')">+</button>
+            </div>
+            <button onclick="addToCart(8)">Buy</button>
+        </div>
+
+        <div class="product">
+            <img src="img/product9.png" alt="sugar">
+            <p id="name9">Крупа «Сквирянка» гречана ядриця, 800г</p>
+            <p>Price: <span id="price9">54.49</span> грн</p>
+            <label for="quantity9">Количество:</label>
+            <div class="quantity-controls">
+                <button  onclick="decreaseQuantity('quantity9')">-</button>
+                <input type="number" id="quantity9" name="quantity" value="1">
+                <button  onclick="increaseQuantity('quantity9')">+</button>
+            </div>
+            <button onclick="addToCart(9)">Buy</button>
+        </div>
+
+    </section>
+    <button onclick="window.open('site2.html', '_blank')">next task</button>
+    <script src="index.js"></script>
+</body>
+</html>

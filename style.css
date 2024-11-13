@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+}
+section{
+    margin: 25px;
+}
+#products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+.product {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    width: 23%; /* Adjust width as needed */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.product img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+.quantity-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin: 10px 0;
+}
+button {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+input[type="number"] {
+    width: 50px;
+    text-align: center;
+}
